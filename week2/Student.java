@@ -2,13 +2,20 @@ package week2;
 
 public class Student {
   // Attributes
-  String courses;
-  String firstName;
-  String lastName;
-  int age;
+  private String courses;
+  private String firstName;
+  private String lastName;
+  private int age;
 
-  //Behaviours / method / function
-  public void setFirstName(String firstName1) {
-    this.firstName = firstName1; 
-  } 
+  // Behaviours / method/ function
+  // Setter of firstName
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  // Getter of firstName
+  public String getFirstName() {
+    return this.firstName;
+  }
+
 }
