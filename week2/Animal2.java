@@ -22,7 +22,7 @@ public class Cat extends Animal2 {
 
 public class Main {
   public static void main(String[] args) {
-    Animal myAnimal = new Animal();
+    Animal2 myAnimal = new Animal2();
     myAnimal.makeSound(); // Output: "Generic animal sound."
 
     Dog myDog = new Dog();
