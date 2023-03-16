@@ -101,5 +101,23 @@ public  class Cat extends Animal {
       System.out.println(cat.sum(1, 2, 3, 4, 5));
       System.out.println(cat.sum(1, 2, 3));
 
-  }
-}
+
+      AmountHolder holder = new AmountHolder(10);
+      doSomething(holder);
+      System.out.println("Amount is " + holder.getAmount());
+          
+        }
+      
+      }
+      
+
+ // }
+//}
+
+//public class PassReferenceByValue {
+  //public static void doSomething(AmountHolder holder){
+    //holder = new AmountHolder(99);
+    
+  //}
+
+//}
