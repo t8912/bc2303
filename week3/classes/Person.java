@@ -17,6 +17,25 @@ public Person(double height, double weight) {
   this.weight = weight;
 }
 
+// Getter Setter for height / weight
+public double getHeight() {
+  return this.height;
+}
+
+public double getWeight() {
+  return this.weight;
+}
+
   public abstract void sleep();
+
+//Factory Pattern
+  public static Person getPerson(int cat){ //1,2,3...
+    if (cat ==1) {
+      return new Student();
+    } else if (cat == 2) {
+      return new Teacher();
+    }
+   return new Student();
+  }
   
 }

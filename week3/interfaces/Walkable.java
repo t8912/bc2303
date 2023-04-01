@@ -1,8 +1,8 @@
 package week3.interfaces;
 
 public interface Walkable {
- //100%
- public void walk();
+ //100% abstraction
+ public void walk(); //public abstract 
 
   
 }
