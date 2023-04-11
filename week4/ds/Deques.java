@@ -1,5 +1,6 @@
 package week4.ds;
 
+import java.util.Comparator;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -25,6 +26,7 @@ public class Deques {
     //String removed2 = strings.poll(); // no exception when empty queue
     //System.out.println(strings);   
       
+    
   }
 
 }

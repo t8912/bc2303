@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="/Users/tonyng/github/bc2303/week5/lambda-demo/src/main/java/com/codewave/lambda/model/Staff.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/tonyng/github/bc2303/week5/lambda-demo/src/main/java/com/codewave/lambda/App.java">
+</file>
+<file name="/Users/tonyng/github/bc2303/week5/lambda-demo/src/test/java/com/codewave/lambda/AppTest.java">
+</file>
+</checkstyle>
