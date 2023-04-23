@@ -1,0 +1,25 @@
+{
+  "name": "john",
+  "address": [
+    {
+      "addr1" : "ABC",
+      "addr2" : "ABCD",
+      "city" : "HONG KONG"
+    },
+    {
+      "addr1" : "XYZ",
+      "addr2" : "ABCD",
+      "city" : "HONG KONG"
+    }
+  ]
+}
+//Java Class
+public class Person {
+  String name;
+  List<Address> addresses;
+}
+public class Address{
+  String addr1;
+  String addr2;
+  String city;
+}

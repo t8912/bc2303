@@ -1,0 +1,65 @@
+{
+  "shop": {
+    "name": "ABC Shop",
+    "location": {
+      "address": "Hong Kong"
+    },
+    "products": [
+      {
+        "name": "router",
+        "description": "low end",
+        "price": 20000,
+        "quantity": 1000
+      },
+      {
+        "name": "switch",
+        "description": "Layer 2",
+        "price": 10000,
+        "quantity": 500
+      }
+    ]
+  },
+  "employees": [
+    {
+      "name": "John",
+      "title": "Manager",
+      "phone": "1111-1234",
+      "email": "john@eabcshop.com",
+      "startDate": "2018-01-01"
+    },
+    {
+      "name": "Jason",
+      "title": "Sales Associate",
+      "phone": "2222-5678",
+      "email": "jason@abcshop.com",
+      "startDate": "2017-06-01"
+    }
+  ]
+}
+
+//////////
+
+public class Shop {
+  private String name;
+  private Address location;
+  private List<Product> products;
+}
+
+public class Product {
+  private String name;
+  private String description;
+  private double price;
+  private int quantity;
+  private String category;
+}
+
+public class Employee {
+  private String name;
+  private String title;
+  private String phone;
+  private String email;
+  private LocalDate startDate;
+}
+
+
+

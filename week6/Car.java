@@ -2,16 +2,22 @@ package week6;
 
 public class Car {
 
-  private String driver; // state
+  private Driver driver; // state
 
   private String color; // state
+
+  private double engine;
 
   public Car() {
   }
 
-  public Car(String driver, String color) {
+  public Car(Driver driver, String color) {
     this.driver = driver;
     this.color = color;
+  }
+
+  public String getColor() {
+    return color;
   }
 
   public Car(Builder1 builder1) {
@@ -19,11 +25,19 @@ public class Car {
     this.color = builder1.getColor();
   }
 
+  public double getEngine() {
+    return this.engine;
+  }
+
+  public void startEngine(Driver driver) {
+    this.engine += driver.accelerte(engine);
+  }
+
   public static Builder1 builder() {
     return new Builder1();
   }
 
-  public void setDriver(String driver) {
+  public void setDriver(Driver driver) {
     this.driver = driver;
   }
 
@@ -50,13 +64,15 @@ public class Car {
     public int getAge() {
       return this.age;
     }
+
+   
   }
 
   public static class Builder1 { // static
-    private String driver;
+    private Driver driver;
     private String color;
 
-    public Builder1 driver(String driver) {
+    public Builder1 driver(Driver driver) {
       this.driver = driver;
       return this;
     }
@@ -66,7 +82,7 @@ public class Car {
       return this;
     }
 
-    public String getDriver() {
+    public Driver getDriver() {
       return this.driver;
     }
 
@@ -83,7 +99,7 @@ public class Car {
     // Traditional way of initialization
     Car car = new Car();
     car.setColor("Yellow"); // 
-    Car car2 = new Car("Yellow", null); //
+    Car car2 = new Car(new Father(), "Yellow"); //
 
     Car.Builder b = new Car().new Builder();
     b.setAge(3);
@@ -91,7 +107,7 @@ public class Car {
     
     // Builder Pattern (Builder1 class)
     Car b1 = Car.builder() //
-        .driver("John") //
+        .driver(new Father()) //
         .color("Yellow") //
         .build();
     System.out.println(b1.toString()); // [driver=John, color=Yellow]
