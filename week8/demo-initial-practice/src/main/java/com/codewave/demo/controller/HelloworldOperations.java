@@ -9,12 +9,12 @@ import com.codewave.demo.foundation.response.ApiResponse;
 import com.codewave.demo.model.TransferRecord;
 
 public interface HelloworldOperations {
-  
+
   @GetMapping(value = "/greeting")
   String sayHello();
 
   @GetMapping(value = "/transferrecord")
-  //ApiResponse<List<TransferRecord>> getTransferRecords();
+  // ApiResponse<List<TransferRecord>> getTransferRecords();
   ResponseEntity<ApiResponse<List<TransferRecord>>> getTransferRecords();
-  
+
 }
