@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.codewave.demo.controller.HelloworldOperations;
-import com.codewave.demo.foundation.response.ApiResponse;
+import com.codewave.demo.hktvmall.Infra.response.ApiResponse;
 import com.codewave.demo.model.TransferRecord;
 import com.codewave.demo.service.TransferService;
 

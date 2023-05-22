@@ -5,8 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-//import com.codewave.demo.foundation.exception.BusinessException;
-import com.codewave.demo.foundation.exception.NotFoundException;
+import com.codewave.demo.hktvmall.Infra.exception.NotFoundException;
 import com.codewave.demo.model.Account;
 import com.codewave.demo.model.TransferRecord;
 import com.codewave.demo.service.DatabaseService;

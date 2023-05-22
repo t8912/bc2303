@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.codewave.demo.foundation.response.ApiResponse;
+import com.codewave.demo.hktvmall.Infra.response.ApiResponse;
 import com.codewave.demo.model.Account;
 //import com.codewave.demo.model.TransferRecord;
 import com.codewave.demo.model.TransferRecord;

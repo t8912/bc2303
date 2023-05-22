@@ -1,0 +1,29 @@
+Server:
+  port: 8090
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sys
+    username: root
+    password: P@ssw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  sql:
+    init:
+      schema-locations: classpath:ddl/DDL_DROP.sql, classpath:ddl/DDL_TUSERS.sql, classpath:ddl/DDL_TPRODUCTS.sql, classpath:ddl/DDL_TPRODUCT_DISCOUNTS.sql, classpath:ddl/DDL_TSHOPPING_CARTS.sql, classpath:ddl/DDL_TINVOICES.sql
+      # data-locations: classpath:DML_STUDENTS.sql
+      mode: always # always
+spring.jpa:
+  # properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  #properties:
+  #   hibernate.hbm2ddl.auto: none
+  hibernate.ddl-auto: none  # for exercise/ testing use only
+  #spring.jpa.properties.hibernate.hbm2ddl.auto=create
+  show-sql: true
+
+api : 
+  jsonplaceholder: 
+    domain: 'jsonplaceholder.typicode.com'
+    endpoint: '/users'
+  
