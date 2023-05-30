@@ -1,0 +1,23 @@
+server:
+  port: 8099
+
+spring.datasource:
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: 
+  password: 
+spring.jpa:
+  show-sql: true
+  ## Hibernate Properties
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  # Hibernate ddl auto (create, create-drop, validate, update)
+  #hibernate.ddl-auto: update
+  hibernate.ddl-auto: create-drop
+
+spring.sql.init:
+  schema-location: classpath:ddl/DDL_TUSERS.sql, classpath:ddl/DDL_TPOSTS.sql
+  mode: always
+
+
+
+mybatis:
+  type-aliases-package: com.codewave.demo.postgresql.mapper

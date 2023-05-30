@@ -22,14 +22,17 @@ import java.util.List;
 
 public class App extends Thread {
 
+    // attributes
+
     public static void main(String[] args) throws InterruptedException {
-        List<String> strings = new ArrayList<>();
+        // List is NOT thread-safe
+        List<String> strings = new ArrayList<>(); // local Variable
 
         Thread thread1 = new Thread(() -> {
             // System.out.println("I am thread 1");
             // List<String> strings = new ArrayList<>();
             for (int i = 0; i < 100000; ++i) {
-                strings.add("something");
+                strings.add("something"); // remove array, create new array, add back old elements, add new element
             }
             System.out.println("Thread 1:"+strings.size());
         });

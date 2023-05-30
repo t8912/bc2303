@@ -1,0 +1,16 @@
+server:
+  port: 8099
+
+Spring.datasource:
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: 
+  password: 
+spring.jpa:
+  show-sql: true
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  hibernate.ddl-auto: update
+
+mybatis:
+  type-aliases-package: com.codewave.demo.postgresql.mapper
+
+  

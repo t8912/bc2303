@@ -15,7 +15,7 @@ import com.codewave.project.placeholder.service.impl.TestRedisService;
 public class RedisContoller {
 
   @Autowired
-  TestRedisService testRedisService;
+  RedisService eedisService;
 
   // http://locahost:8091/redis/v1/test/19
   @GetMapping(value = "/test/key/{key}/value/{value}")
@@ -32,7 +32,7 @@ public class RedisContoller {
   public ApiResponse<String> get(@PathVariable(value = "key") String key) {
     return ApiResponse.<String>builder()   
     .ok()
-    .data(testRedisService.get(key))
+    .data(String).get(key))
     .build();
   }
   

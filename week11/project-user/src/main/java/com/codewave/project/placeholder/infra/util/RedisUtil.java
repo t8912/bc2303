@@ -11,20 +11,20 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.data.redis.core.RedisTemplate;
 
 
-public class RedisUtil {
+public class RedisUtil<T> {
 
      //IOC, Dependency
-    private RedisTemplate<String, Object> redisTemplate;
+    private RedisTemplate<String, T> redisTemplate;
 
     // empty constructor
 
     // Constructor
-    private RedisUtil(RedisTemplate<String, Object> redisTemplate){
+    private RedisUtil(RedisTemplate<String, T> redisTemplate){
       this.redisTemplate = redisTemplate;
     }
 
-    public static RedisUtil of(RedisTemplate<String, Object> redisTemplate) {
-        return new RedisUtil(redisTemplate);
+    public static<T> RedisUtil<T> of(RedisTemplate<String, T> redisTemplate) {
+        return new RedisUtil<>(redisTemplate);
     }
     //=============================common============================
     /**

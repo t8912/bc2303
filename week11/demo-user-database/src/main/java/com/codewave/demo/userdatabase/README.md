@@ -11,7 +11,7 @@
 - ModelMapper, convert between DTOs
 - Scheduled Jobs
 - Actuator (health check/ metrics)
-- RestTemplate to invoice API
+- RestTemplate to invoke API
 - ApiResponse, common API JSON response type
 - Global Exception Handler (TODO: throw exception in Service layer)
 - Maven, version, parent, inject program/class
