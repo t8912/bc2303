@@ -1,2 +1,18 @@
-Server:
+server:
   port: 8100
+
+# Data Source Settings
+spring.sql.init:
+  platform: h2
+  # schema-locations: classpath:ddl/DDL_TUSERS.sql, classpath:ddl/DDL_TPOSTS.sql, classpath:ddl/DDL_TCOMMENTS.sql
+  mode: always # always
+spring.datasource:
+  url: jdbc:h2:mem:jpademo
+
+# JPA Settings
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: create-drop # for development purpose
+
+# H2 Database Settings
+spring.h2.console.enabled: true

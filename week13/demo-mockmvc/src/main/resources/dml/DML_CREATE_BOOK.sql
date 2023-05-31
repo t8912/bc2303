@@ -1,0 +1,1 @@
+insert into TBOOKS (ID, AUTHOR, PRICE) values (1, 'Eric', 34.2);
