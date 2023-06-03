@@ -162,6 +162,8 @@
 </template>
 
 <script>
+
+
 import "./assets/tailwind.css";
 import { computed, ref, watchEffect } from "vue";
 
@@ -178,7 +180,6 @@ export default {
         const response = await axios.get(
           "http://localhost:8085/crypto/api/v1/coin/market"
         );
-       //coins.value = response.data.slice(0, 20);
         coins.value = response.data;
       } catch (err) {
         console.log(err);
