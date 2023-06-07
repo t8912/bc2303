@@ -1,6 +1,8 @@
 package com.codewave.project.projectcryptocoingecko2.model.dto;
 
 
+import java.util.Map;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,6 +26,7 @@ public class CoinDTO {
     private double total_volume;
     private double market_cap;
     private int market_cap_rank;
+    private Map<String, Double> exchange_rate;
 }
 
 /* 

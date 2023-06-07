@@ -15,6 +15,12 @@ public class ApiException extends RuntimeException {
         this.apiError = new ApiError();
     }
 
+    public ApiException(String message) {
+        super(message);
+        this.apiError = new ApiError();
+    }
+
+
     public ApiError getApiError() {
         return apiError;
     }

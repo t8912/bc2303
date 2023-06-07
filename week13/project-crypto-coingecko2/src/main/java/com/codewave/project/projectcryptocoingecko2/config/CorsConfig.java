@@ -12,7 +12,7 @@ public class CorsConfig {
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
-        corsConfig.addAllowedOrigin("http://localhost:8082"); // Replace with your frontend application's URL
+        corsConfig.addAllowedOrigin("http://localhost:8082"); 
         corsConfig.addAllowedMethod("*");
         corsConfig.addAllowedHeader("*");
 
