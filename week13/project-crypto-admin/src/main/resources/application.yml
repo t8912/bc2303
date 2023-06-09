@@ -1,0 +1,27 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sys
+    username: root
+    password: P@ssw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      schema-locations: classpath:ddl/DDL_CHANNELS.sql, classpath:ddl/DDL_CHANNEL_TRANS.sql, classpath:ddl/DDL_CHANNEL_COIN_MAPPINGS.sql
+      # data-locations: classpath:DML_STUDENTS.sql
+      mode: never # always
+  jpa:
+    hibernate:
+      ddl-auto: none  # for exercise/ testing use only
+    show-sql: true
+  cache:
+    redis:
+      time-to-live: PT10S
+
+
+
+
+
+
